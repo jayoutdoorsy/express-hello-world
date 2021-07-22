@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
   const randomVar = random.bernoulli(0.5);
   res
     .set("x-powered-by", "cyclic.sh")
-    .send(`<h1>Hello World what's up!!!!!! HI KAM!?! bernoulli random var ${randomVar}</h1>`)
+    .send(`<h1>Hello World what's up!!!!!! HI KAM!?! bernoulli random var ${randomVar()}</h1>`)
     .end();
 });
 
